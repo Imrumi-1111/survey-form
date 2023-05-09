@@ -1,0 +1,23 @@
+.wrapper{
+    display: flex;
+    border: 1em solid white;
+    justify-content: space-around;
+    gap: 400px;
+}
+
+
+
+.btn{
+    height: 35px;
+    width: 80px;
+    font-size: large;
+    border-radius: 10%;
+    
+   
+}
+
+.put-value{
+    height: 30px;
+    width: 200px;
+    font-size: x-large;
+}

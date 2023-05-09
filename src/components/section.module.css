@@ -1,0 +1,21 @@
+.option{
+    /* display: flex;
+    background-color: aqua;
+    border: 3px solid rgb(82, 13, 172);
+    justify-content: space-around;
+    font-size: 10px;
+    padding-left: 10px;
+    
+    padding-top: 10px; */
+    display: flex;
+    border: 1px solid whitesmoke;
+    justify-content: space-around;
+    gap: 200px;
+    padding-left: 10px;
+    font-size: medium;
+
+}
+.menu{
+    padding-top: 20px;
+    font-size: 24px;
+}

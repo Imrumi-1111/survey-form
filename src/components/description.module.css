@@ -1,0 +1,10 @@
+.details{
+    display: flex;
+    border: 1rem solid white;
+    justify-content: space-between;
+    gap: 100px;
+}
+.bmi{
+    padding-left: 10px;
+    padding-right: 400px;
+}
