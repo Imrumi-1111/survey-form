@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+  :root{
+    color: brown
+  }
+  *,*::before,*::after{
+    box-sizing: border-box;
+  }
+  
+    body{
+    
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: inherit;
+    font-weight: 300;
+    line-height: 2;
+    margin: 0;
+    text-align: center;
+
+  }
+  body::before{
+    content: '';
+    position: fixed;
+    top: 10;
+    left: 13;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: url(../surveyimg.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    filter: blur(8px);
+  }
+
+  #title{
+    border: 1px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:midnightblue;
+    font-weight:600;
+    font-size: 3rem;
+  }
+
+  h1{
+    font-size: 5px;
+    line-height: 3;
+  }
+  
+  p{
+    font-size: 2rem;
+  }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="title">
+                Survey Form on increasing stress levels and its effects
+            </h1>
+            <p id="description">
+                Thank you for co-ordianting with us to make the world worth living
+            </p>
+        </div>
+        <form action="" id="Survey-Form">
+            <div class="form-group">
+                <label for="name"> Name</label>
+                <input type="text" 
+                name="name" id="name"
+                class="formControl"
+                placeholder="Enter your full name"
+                required>
+            </div>
+            <div class="form-group">
+                <label for="email"> Email id</label>
+                <input type="email" 
+                name="email" id="email"
+                class="formControl"
+                placeholder="Enter your email id"
+                required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" 
+                name="age" id="age"
+                class="formControl"
+                placeholder="Enter your age"
+                required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="sometimes"
+                    class="inputRadio"
+                    checked>male
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="sometimes"
+                    class="inputRadio"
+                    checked>female
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="sometimes"
+                    class="inputRadio"
+                    checked>others
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="phone">Contact No.</label>
+                <input type="number" 
+                name="phone" id="phone"
+                class="formControl"
+                placeholder="Enter your contact no."
+                required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" 
+                name="address" id="address"
+                class="formControl"
+                placeholder="Enter your address"
+                required>
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" 
+                name="country" id="country"
+                class="formControl"
+                placeholder="Enter your country"
+                required>
+            </div>
+            <div class="form-group">
+                <label for="state">State/Province</label>
+                <input type="text" 
+                name="state" id="state"
+                class="formControl"
+                placeholder="Enter your state/province"
+                required>
+            </div>
+            <h2>Answer the following question</h2>
+            <h4>Checklist 1</h4>
+            <div class="form-group">
+                <p id="question">I am not confident abouot my abilities</p>
+                <select name="role" id="dropdown"
+                class="formControl"required>
+                <option value="" disabled
+                selected>select your answer</option>
+                <option value="very often">very often</option>
+                <option value="often">often</option>
+                <option value="sometimes">sometimes</option>
+                <option value="rarely">rarely</option>
+                <option value="very rarely">very rarely</option>
+            </select>
+        
+            <div class="form-group">
+                <p id="question">I avoid suspicious people</p>
+                <select name="role" id="dropdown"
+                class="formControl"required>
+                <option value="" disabled
+                selected>select your answer</option>
+                <option value="very often">very often</option>
+                <option value="often">often</option>
+                <option value="sometimes">sometimes</option>
+                <option value="rarely">rarely</option>
+                <option value="very rarely">very rarely</option>
+            </select>
+            <div class="form-group">
+                <p id="question">I am scared of insects</p>
+                <select name="role" id="dropdown"
+                class="formControl"required>
+                <option value="" disabled
+                selected>select your answer</option>
+                <option value="very often">very often</option>
+                <option value="often">often</option>
+                <option value="sometimes">sometimes</option>
+                <option value="rarely">rarely</option>
+                <option value="very rarely">very rarely</option>
+            </select>
+            <div class="form-group">
+                <p id="question">I feel stressed in a traffic jam</p>
+                <select name="role" id="dropdown"
+                class="formControl"required>
+                <option value="" disabled
+                selected>select your answer</option>
+                <option value="very often">very often</option>
+                <option value="often">often</option>
+                <option value="sometimes">sometimes</option>
+                <option value="rarely">rarely</option>
+                <option value="very rarely">very rarely</option>
+            </select>
+            <div class="form-group">
+                <p id="question">I cannot keep up with very dark surroundings</p>
+                <select name="role" id="dropdown"
+                class="formControl"required>
+                <option value="" disabled
+                selected>select your answer</option>
+                <option value="very often">very often</option>
+                <option value="often">often</option>
+                <option value="sometimes">sometimes</option>
+                <option value="rarely">rarely</option>
+                <option value="very rarely">very rarely</option>
+            </select>
+            <div class="form-group">
+                <p id="question">Societal beauty standards is suffocating</p>
+                <select name="role" id="dropdown"
+                class="formControl"required>
+                <option value="" disabled
+                selected>select your answer</option>
+                <option value="very often">very often</option>
+                <option value="often">often</option>
+                <option value="sometimes">sometimes</option>
+                <option value="rarely">rarely</option>
+                <option value="very rarely">very rarely</option>
+            </select>
+            <div class="form-group">
+                <p id="question">I feel pressured when I am forced to follow the rituals</p>
+                <select name="role" id="dropdown"
+                class="formControl"required>
+                <option value="" disabled
+                selected>select your answer</option>
+                <option value="very often">very often</option>
+                <option value="often">often</option>
+                <option value="sometimes">sometimes</option>
+                <option value="rarely">rarely</option>
+                <option value="very rarely">very rarely</option>
+            </select>
+            <div class="form-group">
+                <p id="question">It is stressing with excessive closeness with a friend</p>
+                <select name="role" id="dropdown"
+                class="formControl"required>
+                <option value="" disabled
+                selected>select your answer</option>
+                <option value="very often">very often</option>
+                <option value="often">often</option>
+                <option value="sometimes">sometimes</option>
+                <option value="rarely">rarely</option>
+                <option value="very rarely">very rarely</option>
+            </select>
+            <div class="form-group">
+                <p id="question">I feel stressed before entering exam hall</p>
+                <select name="role" id="dropdown"
+                class="formControl"required>
+                <option value="" disabled
+                selected>select your answer</option>
+                <option value="very often">very often</option>
+                <option value="often">often</option>
+                <option value="sometimes">sometimes</option>
+                <option value="rarely">rarely</option>
+                <option value="very rarely">very rarely</option>
+            </select>
+            <div class="form-group">
+                <p id="question">Loud voices of people disturbs my confidence and concentration</p>
+                <select name="role" id="dropdown"
+                class="formControl"required>
+                <option value="" disabled
+                selected>select your answer</option>
+                <option value="very often">very often</option>
+                <option value="often">often</option>
+                <option value="sometimes">sometimes</option>
+                <option value="rarely">rarely</option>
+                <option value="very rarely">very rarely</option>
+            </select>
+            </div>
+            <h4>Checklist 2</h4>
+            <div class="form-group">
+                <p id="question">Underconfidence creeps in when I face aggression</p>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="very rarely"
+                    class="inputRadio"
+                    checked>very rarely
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="rarely"
+                    class="inputRadio"
+                    checked>rarely
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="sometimes"
+                    class="inputRadio"
+                    checked>sometimes
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="often"
+                    class="inputRadio"
+                    checked>often
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="very often"
+                    class="inputRadio"
+                    checked>very often
+                </label>
+            </div>
+            <div class="form-group">
+                <p id="question">I start trembling after seeing an animal like dog or cat</p>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="very rarely"
+                    class="inputRadio"
+                    checked>very rarely
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="rarely"
+                    class="inputRadio"
+                    checked>rarely
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="sometimes"
+                    class="inputRadio"
+                    checked>sometimes
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="often"
+                    class="inputRadio"
+                    checked>often
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="very often"
+                    class="inputRadio"
+                    checked>very often
+                </label>
+            </div>
+            <div class="form-group">
+                <p id="question">Sleep pattern gets affected under anxious conditions</p>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="very rarely"
+                    class="inputRadio"
+                    checked>very rarely
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="rarely"
+                    class="inputRadio"
+                    checked>rarely
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="sometimes"
+                    class="inputRadio"
+                    checked>sometimes
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="often"
+                    class="inputRadio"
+                    checked>often
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="very often"
+                    class="inputRadio"
+                    checked>very often
+                </label>
+            </div>
+            <div class="form-group">
+                <p id="question">I palpitate when I have to meet a new person</p>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="very rarely"
+                    class="inputRadio"
+                    checked>very rarely
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="rarely"
+                    class="inputRadio"
+                    checked>rarely
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="sometimes"
+                    class="inputRadio"
+                    checked>sometimes
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="often"
+                    class="inputRadio"
+                    checked>often
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="very often"
+                    class="inputRadio"
+                    checked>very often
+                </label>
+            </div>
+            <div class="form-group">
+                <p id="question">I feel restless under deadlines</p>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="very rarely"
+                    class="inputRadio"
+                    checked>very rarely
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="rarely"
+                    class="inputRadio"
+                    checked>rarely
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="sometimes"
+                    class="inputRadio"
+                    checked>sometimes
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="often"
+                    class="inputRadio"
+                    checked>often
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="very often"
+                    class="inputRadio"
+                    checked>very often
+                </label>
+            </div>
+            <div class="form-group">
+                <p id="question">I binge eat under stress</p>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="very rarely"
+                    class="inputRadio"
+                    checked>very rarely
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="rarely"
+                    class="inputRadio"
+                    checked>rarely
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="sometimes"
+                    class="inputRadio"
+                    checked>sometimes
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="often"
+                    class="inputRadio"
+                    checked>often
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="very often"
+                    class="inputRadio"
+                    checked>very often
+                </label>
+            </div>
+            <div class="form-group">
+                <p id="question">I feel depressed when I do not achieve my goal</p>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="very rarely"
+                    class="inputRadio"
+                    checked>very rarely
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="rarely"
+                    class="inputRadio"
+                    checked>rarely
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="sometimes"
+                    class="inputRadio"
+                    checked>sometimes
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="often"
+                    class="inputRadio"
+                    checked>often
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="very often"
+                    class="inputRadio"
+                    checked>very often
+                </label>
+            </div>
+            <div class="form-group">
+                <p id="question">I feel fatigue under excess stress</p>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="very rarely"
+                    class="inputRadio"
+                    checked>very rarely
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="rarely"
+                    class="inputRadio"
+                    checked>rarely
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="sometimes"
+                    class="inputRadio"
+                    checked>sometimes
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="often"
+                    class="inputRadio"
+                    checked>often
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="very often"
+                    class="inputRadio"
+                    checked>very often
+                </label>
+            </div>
+            <div class="form-group">
+                <p id="question">I clasp my fingers during any interview</p>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="very rarely"
+                    class="inputRadio"
+                    checked>very rarely
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="rarely"
+                    class="inputRadio"
+                    checked>rarely
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="sometimes"
+                    class="inputRadio"
+                    checked>sometimes
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="often"
+                    class="inputRadio"
+                    checked>often
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="very often"
+                    class="inputRadio"
+                    checked>very often
+                </label>
+            </div>
+            <div class="form-group">
+                <p id="question">I hear my heartbeat while anxious</p>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="very rarely"
+                    class="inputRadio"
+                    checked>very rarely
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="rarely"
+                    class="inputRadio"
+                    checked>rarely
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="sometimes"
+                    class="inputRadio"
+                    checked>sometimes
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="often"
+                    class="inputRadio"
+                    checked>often
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source" value="very often"
+                    class="inputRadio"
+                    checked>very often
+                </label>
+            </div>
+            <div class="form-group">
+                <button type="submit"
+                    id="submit"
+                    class="btn">submit</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
